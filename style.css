@@ -128,14 +128,25 @@ body .main-sections{
     border-radius: 20px;
     width: 300px;
     transition: 1s tranform;
+    position: relative;
+    z-index: 1;
 }
 
 .hot-offers-card:hover{
-    transform: scale(1.25)
+    transform: scale(1.25);
+    z-index: 100;
 }
 
 .hot-offers-card .thumb{
     border-radius: 25px 25px 0px 0px;
+}
+
+.hot-offers-card .discount{
+    position: absolute;
+    width: 70px;
+    top: 5%;
+    right: 2%;
+    z-index: 10;
 }
 
 .hot-offers-card-info{
